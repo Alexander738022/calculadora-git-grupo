@@ -1,0 +1,14 @@
+name: Pipeline de Validacion Python
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar codigo fuente
+        uses: actions/checkout@v4
+      - name: Instalar entorno Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Verificar ejecucion del Script
+        run: python calculadora.py
