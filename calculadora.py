@@ -9,8 +9,3 @@ def restar(a, b):
 print("--- CALCULADORA ---")
 print(f"Suma de 5 + 3 = {sumar(5, 3)}")
 print(f"Resta de 10 - 4 = {restar(10, 4)}")
-
-def multiplicar(a, b):
-    return a * b
-
-print(f"Multiplicación de 4 * 3 = {multiplicar(4, 3)}")
